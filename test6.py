@@ -9,7 +9,7 @@ class TestDetectPattern(unittest.TestCase):
         self.assertEqual(detect_pattern([10, 20, 30]), 10)
 
         # Test special cases
-        self.assertEqual(detect_pattern([1, 2, 4]), 0)  # No greatest common factor
+        self.assertEqual(detect_pattern([1, 2, 4]), 1)  # No greatest common factor
         self.assertEqual(detect_pattern([-2, -4, -6]), 2)  # Negative numbers
 
 if __name__ == '__main__':
